@@ -49,11 +49,10 @@ public class GuiView
 	
 	public void addCardButtonToHandButtons(Card cardToAdd)
 	{
-		String buttonName = cardToAdd.getDenomination().toString() + " of " + System.lineSeparator() + cardToAdd.getSuit().toString();
-		Button temp = new Button(buttonName);
-		temp.setSize(temp.getWidth(), 100);
+		CardButton temp = new CardButton(cardToAdd);
 		handButtons.add(temp);
 	}
+	
 	
 	private class XButtonListener extends WindowAdapter
 	{
@@ -68,7 +67,7 @@ public class GuiView
 	}
 	
 	private static Panel handPanel = new Panel();
-	private Vector<Button> handButtons = new Vector<Button>();
-
+	private static Vector<Hand> EntityHands = new Vector<Hand>();
+	private static Vector<CardButton> handButtons = new Vector<CardButton>();
 	
 }

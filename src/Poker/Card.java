@@ -5,8 +5,8 @@ public class Card
 	
 	Card(Denomination cardValue, Suit cardSuits)
 	{
-		CardValue = cardValue;
-		CardSuit = cardSuits;
+		this.CardValue = cardValue;
+		this.CardSuit = cardSuits;
 	}
 	
 	public Denomination getDenomination()
@@ -18,9 +18,7 @@ public class Card
 	{
 		return CardSuit;
 	}
-	
-	
+
 	private Denomination CardValue;
-	private Suit CardSuit;
-	
+	private Suit CardSuit;	
 }
