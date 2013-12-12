@@ -51,14 +51,15 @@ public class Deck
 		int deckSize = Cards.size();
 		for(int i = 0; i < deckSize; i++)
 		{
-			int randomNumber = 0;
-			//TODO: decide on a random number between 0 & deckSize-1 inclusive
+			int randomNumber =(int) ((deckSize-1-i)*Math.random());
+			
 			ShuffledDeck.add(Cards.elementAt(randomNumber));
 			Cards.remove(randomNumber); 
 		}
 		
 		Cards = ShuffledDeck;		
 	}
+	
 	
 	/**
 	 * Returns the first card from Cards and removes it from the vector

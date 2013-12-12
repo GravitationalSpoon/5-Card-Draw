@@ -10,7 +10,7 @@ public class GuiView
 		Frame gameFrame = new Frame("Poker Game v0.1");
 		gameFrame.setSize(800,600);
 		gameFrame.setResizable(false);
-		gameFrame.setLocation(200,200);
+		gameFrame.setLocation(200,100);
 		gameFrame.addWindowListener(new XButtonListener());
 		
 		Panel backgroundPanel = new Panel(new BorderLayout());
