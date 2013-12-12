@@ -15,7 +15,8 @@ public class Deck
 		
 		for(int i = 0; i < hands.size(); i++)
 		{
-			hands.elementAt(i).DiscardHand();
+			if(hands.elementAt(i) != null)
+				hands.elementAt(i).DiscardHand();
 			hands.elementAt(i).DrawHand();
 		}
 	}

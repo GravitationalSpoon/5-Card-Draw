@@ -12,5 +12,5 @@ public class Entity
 		return entityHand;
 	}
 	
-	private Hand entityHand;
+	private Hand entityHand = new Hand();
 }

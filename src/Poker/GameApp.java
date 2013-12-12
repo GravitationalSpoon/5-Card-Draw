@@ -8,13 +8,19 @@ public class GameApp {
 	public static void main(String[] args) 
 	{
 		Hand playerHand = new Hand();
-		Hands.add(0, playerHand);
+		Entities.add(0, new Player());
+		for(int i = 0; i < Entities.size(); i++)
+		{
+			Hands.add(i,Entities.elementAt(i).getEntityHand());
+		}
+		
 		
 		GameDeck.Deal(Hands);
 		
 		view.initiateGuiView();
 	}
 	
+	public static Vector<Entity> Entities = new Vector<Entity>();
 	public static Vector<Hand> Hands = new Vector<Hand>();
 	public static GuiView view = new GuiView();
 	public static Deck GameDeck = new Deck();

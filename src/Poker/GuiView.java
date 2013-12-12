@@ -67,7 +67,7 @@ public class GuiView
 	}
 	
 	private static Panel handPanel = new Panel();
-	private static Vector<Hand> EntityHands = new Vector<Hand>();
+	
 	private static Vector<CardButton> handButtons = new Vector<CardButton>();
 	
 }
